@@ -8,4 +8,7 @@ Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Ctrl-P
+Plug 'kien/ctrlp.vim'
+
 call plug#end()

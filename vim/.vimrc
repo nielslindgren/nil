@@ -10,3 +10,7 @@ endif
 if filereadable(expand("\~/.nil/vim/keys.vim"))
   source \~/.nil/vim/keys.vim
 endif
+
+if filereadable(expand("\~/.nil/vim/general.vim"))
+  source \~/.nil/vim/general.vim
+endif
