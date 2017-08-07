@@ -1,0 +1,45 @@
+## Niels Lindgren - Stanza.co
+## Last Updated: January 13th, 2017
+
+## Load devtools
+library(devtools)
+
+## Turn off scientific notation and set the console width to 82
+options(scipen = 999, width = 82)
+
+## Set up invisible environment to hold functions
+.env <- new.env()
+
+## Source the most recently modified R Script from the working directory
+.env$latest <- function(){
+  raw_directory <- dir(recursive = TRUE)
+  script_list <- raw_directory[grep("[.]R$", raw_directory)]
+  directory_info <- file.info(script_list)
+  latest_row <- which.max(directory_info[["mtime"]])
+  latest_file <- row.names(directory_info[latest_row, ])
+  source(latest_file, local = FALSE)
+}
+
+.env$l <- .env$latest
+
+## Strip a data.frame of its row names
+.env$unrowname <- function(x){
+  row.names(x) <- NULL
+  return(x)
+}
+
+## Open a file in atom or sublime
+.env$atom <- function(file){
+  system(paste0("atom ", file))
+}
+
+.env$sublime <- function(file){
+  system(paste0("sublime", file))
+}
+
+## Attach the functions
+attach(.env)
+
+## Everything inside this function runs at the start of R
+
+## Everything inside this function runs on R exit
