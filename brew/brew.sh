@@ -9,3 +9,5 @@ brew install tmux
 brew install go
 brew install postgresql
 brew install httpie
+brew install node
+brew install ripgrep
