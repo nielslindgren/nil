@@ -10,3 +10,5 @@ ln -s $PWD/vim/.vimrc $HOME/.tmux.conf
 
 npm install -g diff-so-fancy
 
+chmod a+x $PWD/brew/brew.sh
+source $PWD/brew/brew.sh

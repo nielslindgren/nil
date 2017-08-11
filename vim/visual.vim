@@ -51,6 +51,7 @@ let g:indentLine_fileTypeExclude=['vim', 'json', 'markdown']
 let g:indentLine_leadingSpaceEnabled=1
 let g:indentLine_leadingSpaceChar='·'
 let g:indentLine_noConcealCursor=''
+let g:gruvbox_contrast_dark='soft'
 
 " Airline stuff
 let g:airline_theme='gruvbox'

@@ -25,3 +25,6 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
+
+" Make sure backspace is functioning correctly
+set backspace=2

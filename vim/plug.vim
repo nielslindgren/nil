@@ -14,4 +14,10 @@ Plug 'kien/ctrlp.vim'
 " Indentation Guidelines
 Plug 'Yggdroot/indentLine'
 
+" GitGutter
+Plug 'airblade/vim-gitgutter'
+
+" Linting
+Plug 'nvie/vim-flake8'
+
 call plug#end()
