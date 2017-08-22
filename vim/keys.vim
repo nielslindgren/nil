@@ -38,4 +38,4 @@ function! NumberToggle()
   endif
 endfunc
 
-nnoremap jk :call NumberToggle()<cr>
+nnoremap <C-n> :call NumberToggle()<cr>
