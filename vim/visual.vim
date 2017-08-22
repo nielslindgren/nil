@@ -5,7 +5,7 @@ syntax on
 " Enable line numbers
 set number
 " Disable relative numbers
-set norelativenumber
+set relativenumber
 " Show ruler
 set ruler
 " Show matching brackets
