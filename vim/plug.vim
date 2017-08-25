@@ -20,4 +20,7 @@ Plug 'airblade/vim-gitgutter'
 " Linting
 Plug 'nvie/vim-flake8'
 
+" Commenting
+Plug 'tpope/vim-commentary'
+
 call plug#end()
