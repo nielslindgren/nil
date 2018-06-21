@@ -28,14 +28,3 @@ imap <right> <nop>
 
 " Make sure backspace is functioning correctly
 set backspace=2
-
-" Switch between relative and absolute line numbers
-function! NumberToggle()
-  if(&relativenumber == 1)
-    set norelativenumber
-  else
-    set relativenumber
-  endif
-endfunc
-
-nnoremap <C-n> :call NumberToggle()<cr>
