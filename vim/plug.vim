@@ -1,8 +1,9 @@
 " Plugin Central
 call plug#begin('~/.vim/plugged')
 
-" Gruvbox color scheme
+" color schemes
 Plug 'morhetz/gruvbox'
+Plug 'aradunovic/perun.vim'
 
 " Airline
 Plug 'vim-airline/vim-airline'
@@ -17,10 +18,19 @@ Plug 'Yggdroot/indentLine'
 " GitGutter
 Plug 'airblade/vim-gitgutter'
 
-" Linting
-Plug 'nvie/vim-flake8'
-
 " Commenting
 Plug 'tpope/vim-commentary'
+
+" Make the start up experience nicer
+Plug 'mhinz/vim-startify'
+
+" Linting is ok I guess
+Plug 'w0rp/ale'
+
+" I want a functional language to play with
+Plug 'elixir-editors/vim-elixir'
+
+" I want another functional language to play iwth
+Plug 'ElmCast/elm-vim'
 
 call plug#end()
