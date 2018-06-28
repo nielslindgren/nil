@@ -11,12 +11,6 @@ export PS1="\u \[\033[32m\]\${PS1X}\[\033[33m\]\$(parse_git_branch)\[\033[00m\] 
 alias gitgo="cd ~/gocode/src/github.com/nielslindgren"
 alias gipy="cd ~/Code"
 alias tvim="bash /Users/niels/.nil/tmux-dev.sh"
-alias beeline="ssh hadoopgw01-sjc1"
-alias beeline-dca="ssh hadoopgw01-dca1"
-goclone () {
-        mkdir -p $GOPATH/src/code.uber.internal/$1
-        git clone gitolite@code.uber.internal:$1 $GOPATH/src/code.uber.internal/$1 --recursive
-}
 alias gm="bash /Users/niels/code/goodmorning/goodmorning/run.sh"
 alias c="clear"
 alias g="git"
